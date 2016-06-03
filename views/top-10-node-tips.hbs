@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<ul>
+  {{#each content}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+<br>
+<img src="{{image}}" alt="" />
+<br>
+<a href="/">Home</a>
+<a href="{{back}}">Previous Tips</a>
+{{#if next}}
+<a href="{{next}}">Next Tips</a>
+{{/if}}
